@@ -47,7 +47,7 @@ calculateButton.addEventListener("click", function () {
   const toTarget = document.querySelector("input[name='currency_to']:checked")
     ?.value;
 
-  if (!fromTarget && !toTarget) {
+  if (!fromTarget || !toTarget) {
     currencyResult.innerHTML = "Seçimler yapmalısınız";
   } else if (isNaN(amount)) {
     currencyResult.innerHTML = "Amount bir sayı olmalı";
