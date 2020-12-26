@@ -1,7 +1,8 @@
 const data = {
-  USD: {EUR: 0.82, GBP: 0.74},
-  EUR: {USD: 1.23, GBP: 0.91},
-  GBP: {USD: 1.35, EUR: 1.10},
+  USD: {EUR: 0.82, GBP: 0.74, TL: 0.13},
+  EUR: {USD: 1.23, GBP: 0.91, TL: 0.11},
+  GBP: {USD: 1.35, EUR: 1.10, TL: 0.099},
+  TL: {USD: 7.56, EUR: 9.20, GBP: 10.30},
 };
 
 const currencyKeys = Object.keys(data);
